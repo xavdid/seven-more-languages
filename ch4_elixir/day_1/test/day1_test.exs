@@ -19,9 +19,9 @@ defmodule Day1Test do
 
   describe "ListInfo" do
     test "functionality" do
-      assert ListInfo.info([]) == {nil, nil, nil}
-      assert ListInfo.info([1, 3, 5, 7, 9]) == {5, 1, 9}
-      assert ListInfo.info([1, 3, -5, 7, 9]) == {5, -5, 9}
+      assert ListInfo.info([]) == {0, nil, nil}
+      assert ListInfo.info([1, 3, 5, 7, 9]) == {5, 9, 1}
+      assert ListInfo.info([1, 3, -5, 7, 9]) == {5, 9, -5}
     end
   end
 
